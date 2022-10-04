@@ -4,7 +4,9 @@ import One from '../images/1.jpg'
 import Two from '../images/2.jpg'
 import Three from '../images/3.jpg'
 import Four from '../images/4.jpg'
-// import Five from '../images/5.jpg'
+// import Five from '../images/5.jpg';
+
+import Scene from './Scene';
 
 const StyledHeroWrapper = styled.div`
 display: flex;
@@ -42,8 +44,8 @@ h2{
         max-width: 240px;
         flex: 1 0;
         img{
-            // display: none;
-            // visibility: hidden;
+            display: none;
+            visibility: hidden;
             max-width: 100%;
             verticle-align: middle;
         }
@@ -75,8 +77,8 @@ h2{
     max-width: 240px;
     flex: 1 0;
     img{
-        // display: none;
-        // visibility: hidden;
+        display: none;
+        visibility: hidden;
         max-width: 100%;
         verticle-align: middle;
     }
@@ -110,8 +112,8 @@ h2{
     max-width: 240px;
     flex: 1 0;
     img{
-        // display: none;
-        // visibility: hidden;
+        display: none;
+        visibility: hidden;
         max-width: 100%;
         verticle-align: middle;
     }
@@ -145,6 +147,7 @@ const HeroText = () => {
     <StyledHeroWrapper>
         <StyledHeroTextOne>
             <div class="hero__image">
+                <Scene image={ One }/>
                 <img src={ One } alt="cyber punk artwork"/>
             </div>
             <h2>Motion</h2>
@@ -152,15 +155,18 @@ const HeroText = () => {
         <StyledHeroTextTwo>
             <h2>And</h2>
             <div class="hero__image">
+                <Scene image={ Two }/>
                 <img src={ Two } alt="cyber punk artwork"/>
             </div>
         </StyledHeroTextTwo>
         <StyledHeroTextThree>
             <div class="hero__image">
+                <Scene image={ Three }/>
                 <img src={ Three } alt="cyber punk artwork"/>
             </div>
             <h2>emotion</h2>
             <div class="hero__image">
+                <Scene image={ Four }/>
                 <img src={ Four } alt="cyber punk artwork"/>
             </div>
         </StyledHeroTextThree>

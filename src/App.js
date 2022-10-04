@@ -1,10 +1,14 @@
 import React from 'react';
 
 import HeroText from './components/HeroText';
+import Header from './components/Header';
 
 function App() {
   return (
-    <HeroText/>
+    <>
+      <Header/>
+      <HeroText/>
+    </>
   );
 }
 
