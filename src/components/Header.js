@@ -37,7 +37,7 @@ const StyledMenuContainer = styled.div`
 
 const StyledFakeDiv = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 2vh;
   postition: relative;
 `;
 
@@ -50,7 +50,7 @@ gsap.to(".SVGref", {
         start: 0,
         end: "max",
         scrub: 1,
-        markers: true,
+        // markers: true,
     },
 });
 },[])
